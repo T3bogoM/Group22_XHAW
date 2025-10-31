@@ -39,10 +39,9 @@
     <h2>Garden Maintenance</h2>
 
     <img src="_images/The Best Hedge Trimmers for Your Garden—2024 Reviews.jpeg" 
-     alt="Garden Maintenance" 
-     class="course-img"
-     style="width: 300px; height: auto;">
-
+         alt="Garden Maintenance" 
+         class="course-img"
+         style="width: 300px; height: auto; border-radius: 8px; display: block; margin: 0 auto 20px;">
 
     <p><strong>6-week course – R380</strong></p>
     <p>Learn pruning, pest control, lawn care, composting, and sustainable garden maintenance techniques.</p>
@@ -74,4 +73,18 @@
       const checkboxes = document.querySelectorAll('input[name="course"]:checked');
       let total = 0;
 
-      checkboxes.forEach(cb => tota
+      checkboxes.forEach(cb => {
+        total += parseFloat(cb.value);
+      });
+
+      // Apply 10% discount if 2 or more courses selected
+      if (checkboxes.length >= 2) {
+        total *= 0.9;
+      }
+
+      document.getElementById('total').textContent = total.toFixed(2);
+    }
+  </script>
+
+</body>
+</html>
