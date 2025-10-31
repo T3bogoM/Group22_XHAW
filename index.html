@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empowering the Nation - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="_images/Empowering the nation LOGO 7.png" 
+     alt="Empowering the Nation Logo" 
+     class="logo-img" 
+     style="height: 200px; width: auto;">
+
+
+        </a>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="discounts.html">Discounts</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="auth-buttons">
+        <a href="login.html" class="btn">Login</a>
+        <a href="signup.html" class="btn btn-outline">Sign Up</a>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        ☰
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Upskill Today, Empower Tomorrow</h1>
+      <p>Practical training programs for domestic workers and gardeners to unlock better opportunities.</p>
+      <a href="courses.html" class="btn hero-btn">Explore Courses</a>
+    </div>
+  </section>
+
+  <!-- Courses Preview -->
+  <section class="courses-preview">
+    <h2>Our Popular Courses</h2>
+    <div class="course-cards">
+      <div class="course-card">
+        <h3>Domestic Work Training</h3>
+        <p>Learn essential cleaning, laundry, and household management skills.</p>
+        <a href="courses.html" class="btn">Learn More</a>
+      </div>
+
+      <div class="course-card">
+        <h3>Gardening & Landscaping</h3>
+        <p>Master plant care, garden design, and landscaping principles.</p>
+        <a href="courses.html" class="btn">Learn More</a>
+      </div>
+
+      <div class="course-card">
+        <h3>Childcare Basics</h3>
+        <p>Develop caregiving and first-aid knowledge for children.</p>
+        <a href="courses.html" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-preview">
+    <h2>About Empowering the Nation</h2>
+    <p>We provide accessible skills training to help domestic workers and gardeners
+      grow professionally, achieve independence, and improve their livelihoods.</p>
+    <a href="about.html" class="btn btn-outline">Read More</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Empowering the Nation. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>
