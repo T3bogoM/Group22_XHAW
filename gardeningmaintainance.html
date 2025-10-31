@@ -1,42 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Garden Maintenance - Empowering the Nation</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
+
+  <!-- Header -->
+  <header>
     <nav class="navbar">
-    <h2 class="logo">Empowering the Nation</h2>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="courses.html">Courses</a></li>
-      <li><a href="discounts.html">Discounts</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-    <div class="auth-buttons">
-      <a href="login.html" class="btn">Login</a>
-      <a href="signup.html" class="btn btn-outline">Sign Up</a>
-    </div>
-  </nav>
-</header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="_images/Empowering the nation LOGO 7.png" 
+               alt="Empowering the Nation Logo" 
+               class="logo-img">
+        </a>
+      </div>
 
-<section>
-  <h2>Garden Maintenance</h2>
-  <img src="images/gardenmaintenance.jpg" class="course-img" alt="Garden Maintenance">
-  <p>6-week course – R380</p>
-  <p>Learn pruning, pest control, lawn care, composting, and sustainable garden maintenance techniques.</p>
-</section>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="discounts.html">Discounts</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
 
-<section class="discount-calculator">
-  <h2>Discount Calculator</h2>
-  <form id="courseForm"> ...checkboxes... </form>
-  <h3>Total Price: R<span id="total">0</span></h3>
-</section>
+      <div class="auth-buttons">
+        <a href="login.html" class="btn">Login</a>
+        <a href="signup.html" class="btn btn-outline">Sign Up</a>
+      </div>
+    </nav>
+  </header>
 
-<footer><p>© 2025 Empowering the Nation</p></footer>
-<script src="script.js"></script>
-</body>
-</html>
+  <!-- Garden Course Section -->
+  <section class="course-details">
+    <h2>Garden Maintenance</h2>
+
+    <img src="_images/The Best Hedge Trimmers for Your Garden—2024 Reviews.jpeg" 
+     alt="Garden Maintenance" 
+     class="course-img"
+     style="width: 300px; height: auto;">
+
+
+    <p><strong>6-week course – R380</strong></p>
+    <p>Learn pruning, pest control, lawn care, composting, and sustainable garden maintenance techniques.</p>
+  </section>
+
+  <!-- Discount Calculator Section -->
+  <section class="discount-calculator">
+    <h2>Discount Calculator</h2>
+
+    <form id="courseForm">
+      <label><input type="checkbox" name="course" value="380"> Garden Maintenance (R380)</label><br>
+      <label><input type="checkbox" name="course" value="400"> Child Minding (R400)</label><br>
+      <label><input type="checkbox" name="course" value="450"> Cooking Basics (R450)</label><br><br>
+
+      <button type="button" class="btn" onclick="calculateTotal()">Calculate Total</button>
+    </form>
+
+    <h3>Total Price: R<span id="total">0</span></h3>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Empowering the Nation</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function calculateTotal() {
+      const checkboxes = document.querySelectorAll('input[name="course"]:checked');
+      let total = 0;
+
+      checkboxes.forEach(cb => tota
