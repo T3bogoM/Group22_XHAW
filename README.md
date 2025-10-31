@@ -1,1 +1,1 @@
-# Group22_XHAW
+# XHAW-Group-22

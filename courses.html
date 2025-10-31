@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Courses - Empowering the Nation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <h2 class="logo">Empowering the Nation</h2>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html" class="active">Courses</a></li>
+      <li><a href="discounts.html">Discounts</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="login.html" class="btn">Login</a>
+      <a href="signup.html" class="btn btn-outline">Sign Up</a>
+    </div>
+  </nav>
+</header>
+
+<section>
+  <h2>Our Courses</h2>
+  <div class="courses">
+    <div class="course">
+      <h3>First Aid</h3>
+      <img src="_images/Learn How To Give First Aid and Basic Life Support.jpeg">
+      <p>6-month program – R1000</p>
+      <a href="firstaid.html" class="btn">Learn More</a>
+    </div>
+    <div class="course">
+      <h3>Sewing</h3>
+      <img src="_images/Teaching girls working with sewing machine at sewing classes by ai.jpeg" alt="Sewing" class="course-img">
+      <p>6-month program – R900</p>
+      <a href="sewing.html" class="btn">Learn More</a>
+    </div>
+    <div class="course">
+      <h3>Cooking</h3>
+      <img src="_images/Chef Training Students.jpeg" alt="Cooking" class="course-img">
+      <p>6-week course – R450</p>
+      <a href="cooking.html" class="btn">Learn More</a>
+    </div>
+    <div class="course">
+      <h3>Gardening</h3>
+      <img src="_images/Natural Lawn Care for Western WA.jpeg" alt="Gardening" class="course-img">
+      <p>6-week course – R350</p>
+      <a href="gardening.html" class="btn">Learn More</a>
+    </div>
+    <div class="course">
+      <h3>Child Minding</h3>
+      <img src="_images/Bubbly Tots Learning Center.jpeg" alt="Child Minding" class="course-img">
+      <p>6-week course – R400</p>
+      <a href="childminding.html" class="btn">Learn More</a>
+    </div>
+    <div class="course">
+      <h3>Garden Maintenance</h3>
+      <img src="_images/Classroom Success Story_ School Garden Grows Important Lessons for Students.jpeg" alt="Garden Maintenance" class="course-img">
+      <p>6-week course – R380</p>
+      <a href="gardenmaintenance.html" class="btn">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<section class="discount-calculator">
+  <h2>Discount Calculator</h2>
+  <form id="courseForm">
+    <label><input type="checkbox" value="1000"> First Aid (R1000)</label><br>
+    <label><input type="checkbox" value="900"> Sewing (R900)</label><br>
+    <label><input type="checkbox" value="450"> Cooking (R450)</label><br>
+    <label><input type="checkbox" value="350"> Gardening (R350)</label><br>
+    <label><input type="checkbox" value="400"> Child Minding (R400)</label><br>
+    <label><input type="checkbox" value="380"> Garden Maintenance (R380)</label><br>
+  </form>
+  <h3>Total Price: R<span id="total">0</span></h3>
+</section>
+
+<footer>
+  <p>© 2025 Empowering the Nation</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+

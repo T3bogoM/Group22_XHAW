@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Course Registration - Empowering the Nation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <h2 class="logo">Empowering the Nation</h2>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="discounts.html">Discounts</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="login.html" class="btn">Login</a>
+      <a href="signup.html" class="btn btn-outline">Sign Up</a>
+    </div>
+  </nav>
+</header>
+
+<section class="form-section">
+  <h2> Register for a Course</h2>
+  <form id="registerForm">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="course">Select Course:</label>
+    <select id="course" name="course" required>
+      <option value="">Choose a Course</option>
+      <option>First Aid (6 Months)</option>
+      <option>Sewing (6 Months)</option>
+      <option>Landscaping (6 Months)</option>
+      <option>Household Management (6 Months)</option>
+      <option>Child Minding (6 Weeks)</option>
+      <option>Cooking (6 Weeks)</option>
+      <option>Gardening (6 Weeks)</option>
+      <option>Garden Maintenance (6 Weeks)</option>
+    </select>
+
+    <label for="start">Preferred Start Date:</label>
+    <input type="date" id="start" name="start" required>
+
+    <label for="notes">Additional Notes:</label>
+    <textarea id="notes" name="notes" rows="3" placeholder="Any preferences or questions?"></textarea>
+
+    <button type="submit"> Submit Registration</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Empowering the Nation</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
