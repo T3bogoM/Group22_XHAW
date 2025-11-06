@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login - Empowering the Nation</title>
+  <meta name="description" content="Login to your Empowering the Nation account to access course materials and track your progress.">
+  <meta name="keywords" content="login, account access, empowering the nation login">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +19,7 @@
      style="height: 200px; width: auto;">
         </a>
       </div>
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="courses.html">Courses</a></li>
       <li><a href="discounts.html">Discounts</a></li>
@@ -32,11 +35,13 @@
 
 <section class="form-section">
   <h2>Login</h2>
-  <form>
-    <label>Email:</label><br>
-    <input type="email" required><br><br>
-    <label>Password:</label><br>
-    <input type="password" required><br><br>
+  <form id="loginForm">
+    <label for="loginEmail">Email:</label>
+    <input type="email" id="loginEmail" name="email" required>
+    
+    <label for="loginPassword">Password:</label>
+    <input type="password" id="loginPassword" name="password" required>
+    
     <button type="submit" class="btn">Login</button>
   </form>
 </section>
@@ -45,6 +50,7 @@
   <p>© 2025 Empowering the Nation</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
 

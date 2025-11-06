@@ -9,7 +9,7 @@
 body {
   font-family: Arial, sans-serif;
   background: #f9f9f9;
-  color: #333;
+  color: #212121; /* Improved contrast for accessibility */
 }
 
 h1, h2, h3 {
@@ -27,6 +27,7 @@ p {
   align-items: center;
   padding: 15px 40px;
   background: #2E7D32; /* dark green */
+  position: relative;
 }
 
 .logo {
@@ -42,13 +43,59 @@ p {
 }
 
 .nav-links li a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   padding: 5px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #FFD600;
 }
 
 .nav-links li a.active {
-  border-bottom: 2px solid yellow;
+  border-bottom: 2px solid #FFD600;
+  font-weight: bold;
+}
+
+/* Mobile Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .auth-buttons {
+    flex-wrap: wrap;
+  }
+}
+
+/* Select Dropdown Styling */
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+select:focus {
+  border: 2px solid #2E7D32;
+  box-shadow: 0px 0px 8px rgba(46,125,50,0.4);
+  outline: none;
+}
+
+select:hover {
+  border-color: #2E7D32;
 }
 
 .auth-buttons .btn {

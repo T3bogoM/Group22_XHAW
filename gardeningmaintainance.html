@@ -35,31 +35,64 @@
   </header>
 
   <!-- Garden Course Section -->
-  <section class="course-details">
-    <h2>Garden Maintenance</h2>
+  <section class="course-detail" style="max-width: 900px; margin: 40px auto; padding: 30px;">
+    <h1>🌿 Garden Maintenance (6-Week Course)</h1>
+    
+    <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
+      <h2>Course Background</h2>
+      <p>Professional garden maintenance is a specialized skill that requires knowledge of plant care, seasonal tasks, and efficient maintenance techniques. This comprehensive 6-week course was developed to meet the growing demand for skilled garden maintenance workers in South Africa. The program recognizes that maintaining established gardens requires different skills than initial garden creation, focusing on ongoing care, seasonal tasks, and problem-solving.</p>
+      <p>Our Garden Maintenance course is designed for individuals who want to develop professional skills in maintaining beautiful, healthy gardens. The curriculum emphasizes practical, hands-on learning that can be immediately applied in professional settings. Students learn to work efficiently, identify problems early, and maintain gardens that thrive year-round while managing time and resources effectively.</p>
+    </div>
 
-    <img src="_images/The Best Hedge Trimmers for Your Garden—2024 Reviews.jpeg" 
-         alt="Garden Maintenance" 
-         class="course-img"
-         style="width: 300px; height: auto; border-radius: 8px; display: block; margin: 0 auto 20px;">
+    <div style="display: flex; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
+      <img src="_images/The Best Hedge Trimmers for Your Garden—2024 Reviews.jpeg" 
+           alt="Garden Maintenance" 
+           class="course-img"
+           style="flex: 1; min-width: 300px; border-radius: 8px; max-width: 100%;">
+      <img src="_images/Classroom Success Story_ School Garden Grows Important Lessons for Students.jpeg" alt="Garden Care" style="flex: 1; min-width: 300px; border-radius: 8px; max-width: 100%;">
+    </div>
 
-    <p><strong>6-week course – R380</strong></p>
-    <p>Learn pruning, pest control, lawn care, composting, and sustainable garden maintenance techniques.</p>
-  </section>
+    <h2>Course Overview</h2>
+    <p>This intensive course covers all aspects of professional garden maintenance, from routine care tasks to seasonal maintenance and problem-solving. Students learn to maintain various types of gardens including ornamental gardens, lawns, vegetable gardens, and mixed landscapes. The course emphasizes efficiency, sustainability, and professional standards that meet employer expectations.</p>
 
-  <!-- Discount Calculator Section -->
-  <section class="discount-calculator">
-    <h2>Discount Calculator</h2>
+    <h2>Modules Covered</h2>
+    <ul style="line-height: 1.8;">
+      <li><strong>Pruning Techniques:</strong> When and how to prune different types of plants, shrubs, and trees, including proper tool use and safety.</li>
+      <li><strong>Lawn Care and Maintenance:</strong> Mowing techniques, lawn health, fertilization schedules, weed control, and seasonal lawn care.</li>
+      <li><strong>Pest and Disease Management:</strong> Identifying common garden pests and diseases, integrated pest management, and safe treatment application.</li>
+      <li><strong>Composting and Soil Management:</strong> Creating and maintaining compost, improving soil quality, and applying organic amendments.</li>
+      <li><strong>Seasonal Maintenance Tasks:</strong> Understanding what needs to be done in each season, planning maintenance schedules, and preparing gardens for seasonal changes.</li>
+      <li><strong>Water Management:</strong> Efficient irrigation, water conservation, and managing gardens during water restrictions or drought.</li>
+      <li><strong>Tool Maintenance and Safety:</strong> Proper use and care of garden tools, safety procedures, and working efficiently with equipment.</li>
+      <li><strong>Sustainable Practices:</strong> Environmentally friendly maintenance techniques, reducing waste, and creating self-sustaining garden systems.</li>
+    </ul>
 
-    <form id="courseForm">
-      <label><input type="checkbox" name="course" value="380"> Garden Maintenance (R380)</label><br>
-      <label><input type="checkbox" name="course" value="400"> Child Minding (R400)</label><br>
-      <label><input type="checkbox" name="course" value="450"> Cooking Basics (R450)</label><br><br>
+    <h2>Learning Outcomes</h2>
+    <p>Upon successful completion, students will be able to:</p>
+    <ul style="line-height: 1.8;">
+      <li>Maintain healthy, attractive gardens year-round through proper seasonal care and maintenance routines.</li>
+      <li>Prune plants, shrubs, and trees correctly, promoting healthy growth and maintaining desired shapes.</li>
+      <li>Care for lawns professionally, including mowing, fertilizing, and addressing common lawn problems.</li>
+      <li>Identify and manage garden pests and diseases using safe, effective methods.</li>
+      <li>Create and maintain compost systems, improving soil health naturally and sustainably.</li>
+      <li>Plan and execute seasonal maintenance tasks efficiently, managing time and resources effectively.</li>
+      <li>Use garden tools safely and maintain equipment properly, ensuring long-term functionality.</li>
+      <li>Implement water-wise gardening practices, maintaining beautiful gardens even with limited water resources.</li>
+    </ul>
 
-      <button type="button" class="btn" onclick="calculateTotal()">Calculate Total</button>
-    </form>
+    <h2>Who Should Enroll?</h2>
+    <p>This course is perfect for gardeners looking to advance their skills, individuals seeking employment in garden maintenance, and those wanting to start their own garden maintenance business. The program is particularly valuable for those already working as gardeners who want to enhance their professional capabilities. Some basic gardening knowledge is helpful but not required.</p>
 
-    <h3>Total Price: R<span id="total">0</span></h3>
+    <h2>Course Structure</h2>
+    <p>The 6-week program combines classroom learning with extensive hands-on practice in actual gardens. Classes are held twice weekly, with each session lasting 3 hours. Students work directly with plants, tools, and equipment, learning maintenance techniques through practical application. The course includes demonstrations, supervised practice sessions, and independent maintenance projects.</p>
+
+    <div style="background: #e8f5e9; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #2E7D32;">
+      <p><strong>Duration:</strong> 6 Weeks (12 sessions)</p>
+      <p><strong>Fee:</strong> R380 (includes use of tools and practical training materials)</p>
+      <p><strong>Certification:</strong> Graduates receive a Garden Maintenance Certificate from Empowering the Nation, recognized by employers and suitable for professional garden maintenance positions or starting a maintenance business.</p>
+    </div>
+
+    <a href="register.html" class="btn" style="display: inline-block; margin-top: 20px;">Register Now</a>
   </section>
 
   <!-- Footer -->
@@ -67,24 +100,7 @@
     <p>© 2025 Empowering the Nation</p>
   </footer>
 
-  <!-- JavaScript -->
-  <script>
-    function calculateTotal() {
-      const checkboxes = document.querySelectorAll('input[name="course"]:checked');
-      let total = 0;
-
-      checkboxes.forEach(cb => {
-        total += parseFloat(cb.value);
-      });
-
-      // Apply 10% discount if 2 or more courses selected
-      if (checkboxes.length >= 2) {
-        total *= 0.9;
-      }
-
-      document.getElementById('total').textContent = total.toFixed(2);
-    }
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>

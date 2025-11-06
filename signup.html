@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up - Empowering the Nation</title>
+  <meta name="description" content="Create your account with Empowering the Nation to access our skills training courses and resources.">
+  <meta name="keywords" content="sign up, register, create account, empowering the nation registration">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -18,7 +21,7 @@
         </a>
       </div>
   
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="courses.html">Courses</a></li>
       <li><a href="discounts.html">Discounts</a></li>
@@ -36,18 +39,22 @@
   <div class="signup-card">
     <h2>Create Your Account</h2>
     <p class="subtitle">Join us and start empowering your future!</p>
-    <form>
+    <form id="signupForm">
       <div class="input-group">
-        <input type="text" placeholder="Full Name" required>
+        <label for="signupName">Full Name:</label>
+        <input type="text" id="signupName" name="name" placeholder="Full Name" required>
       </div>
       <div class="input-group">
-        <input type="email" placeholder="Email Address" required>
+        <label for="signupEmail">Email Address:</label>
+        <input type="email" id="signupEmail" name="email" placeholder="Email Address" required>
       </div>
       <div class="input-group">
-        <input type="password" placeholder="Password" required>
+        <label for="signupPassword">Password:</label>
+        <input type="password" id="signupPassword" name="password" placeholder="Password" required>
       </div>
       <div class="input-group">
-        <input type="password" placeholder="Confirm Password" required>
+        <label for="signupConfirmPassword">Confirm Password:</label>
+        <input type="password" id="signupConfirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
       </div>
       <button type="submit" class="btn btn-primary">Sign Up</button>
       <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
@@ -59,6 +66,7 @@
   <p>© 2025 Empowering the Nation</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
 
